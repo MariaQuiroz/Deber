@@ -12,22 +12,22 @@ class Calculadora():
 
         print("Los números ingresados son ",self.numero1," y ",self.numero2)
 
-     def suma(self):
+     def sumar(self):
 
         suma=self.numero1+self.numero2
         print("La suma de los dos números es: ",suma)
 
-     def resta(self):
+     def restar(self):
 
         resta=self.numero1-self.numero2
         print("La resta de los dos números es: ",resta)
 
-     def multiplicacion(self):
+     def multiplicar(self):
 
         multiplicacion=self.numero1*self.numero2
         print("La multiplicación de los dos números es: ",multiplicacion)
 
-     def division(self):
+     def dividir(self):
         division=self.numero1/self.numero2
         print("La división de los dos números es: ",division)
 
