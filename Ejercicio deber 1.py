@@ -33,7 +33,7 @@ class Calculadora():
 
 micalculadora=Calculadora()
 micalculadora.imprimir()
-micalculadora.suma()
-micalculadora.resta()
-micalculadora.multiplicacion()
-micalculadora.division()
+micalculadora.sumar()
+micalculadora.restar()
+micalculadora.multiplicar()
+micalculadora.dividir()
