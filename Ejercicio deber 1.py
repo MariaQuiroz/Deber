@@ -1,39 +1,38 @@
-#EJERCICIO 1
-#Andrango Ariana y Quiroz Maria
+# Exercise 1
+# Andrango Ariana and Quiroz Maria
 
-class Calculadora():
+class Calculator():
 
-     def __init__(self):
+    def __init__(self):
+        self.number1 = float(input("Get into first number: "))
+        self.number2 = float(input("Get into second number: "))
 
-        self.numero1 = float(input("Ingresar el primer número: "))
-        self.numero2 = float(input("Ingresar el segundo número: "))
+    def imprint(self):
+        print("The numbers entered are:", self.number1, "and", self.number2)
 
-     def imprimir(self):
+    def add(self):
+        addition = self.number1 + self.number2
+        print("Addition is:", addition)
 
-        print("Los números ingresados son ",self.numero1," y ",self.numero2)
+    def subtract(self):  
+        subtraction = self.number1 - self.number2
+        print("Subtraction is:", subtraction)
 
-     def sumar(self):
+    def multiply(self):
+        multiplication = self.number1 * self.number2
+        print("Multiplication is:", multiplication)
 
-        suma=self.numero1+self.numero2
-        print("La suma de los dos números es: ",suma)
+    def split(self):
+        if self.number2 == 0:  
+            print("Division by zero is not allowed.")
+        else:
+            division = self.number1 / self.number2
+            print("Division is:", division)
 
-     def restar(self):
 
-        resta=self.numero1-self.numero2
-        print("La resta de los dos números es: ",resta)
-
-     def multiplicar(self):
-
-        multiplicacion=self.numero1*self.numero2
-        print("La multiplicación de los dos números es: ",multiplicacion)
-
-     def dividir(self):
-        division=self.numero1/self.numero2
-        print("La división de los dos números es: ",division)
-
-micalculadora=Calculadora()
-micalculadora.imprimir()
-micalculadora.sumar()
-micalculadora.restar()
-micalculadora.multiplicar()
-micalculadora.dividir()
+micalculadora = Calculator()
+micalculadora.imprint()
+micalculadora.add()
+micalculadora.subtract()
+micalculadora.multiply()
+micalculadora.split()
